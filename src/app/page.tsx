@@ -1,7 +1,10 @@
-import Image from "next/image";
+import Home from "./pages/Homepage";
 
-export default function Home() {
+
+export default function Page() {
   return (
-      <div>Setup LSP coy</div>
+    <>
+      <Home />
+    </>
   );
 }

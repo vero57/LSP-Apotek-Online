@@ -1,4 +1,4 @@
-export default function PemilikHeader() {
+export default function Pemilik() {
   return (
     <header>
       <h1>Pemilik Dashboard</h1>

@@ -1,4 +1,4 @@
-export default function ApotekerHeader() {
+export default function Apoteker() {
   return (
     <header>
       <h1>Apoteker Dashboard</h1>

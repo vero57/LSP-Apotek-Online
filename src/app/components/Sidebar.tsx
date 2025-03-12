@@ -1,6 +1,6 @@
 export default function Sidebar() {
   return (
-    <aside className="bg-gray-200 p-4 w-60 h-230">
+    <aside className="bg-gray-200 p-4 w-55 h-170">
       <div className="mb-10">
         <h2 className="font-bold text-[2em]">Menu</h2>
       </div>

@@ -7,7 +7,7 @@ export default function Sidebar() {
     { title: "Dashboard", subItems: ["Overview", "Stats", "Reports"] },
     { title: "Obat", subItems: ["List Obat", "Tambah Obat"] },
     { title: "Penjualan", subItems: ["Transaksi", "Laporan Penjualan"] },
-    { title: "Pemilik", subItems: ["Profil Pemilik", "Pengaturan"] },
+    { title: "Pemilik", subItems: ["Profil Pemilik", "Management Pemilik"] },
     { title: "Distributor", subItems: ["Daftar Distributor", "Management Distributor"] },
   ];
 
@@ -19,12 +19,12 @@ export default function Sidebar() {
       <ul className="list-none p-0">
         {menuItems.map((item, index) => (
           <li key={index}>
-            <div className="mb-2 font-bold text-[1.2em] flex justify-between items-center">
+            <div className="mb-1 font-bold text-[1.2em] flex justify-between items-center">
               <span className="text-gray-800 flex-1">{item.title}</span>
             </div>
-            <ul className="list-none pl-4">
+            <ul className="list-none pl-5 text-[14.5px]">
               {item.subItems.map((subItem, subIndex) => (
-                <li key={subIndex} className="mb-2 text-[1em] text-gray-700">
+                <li key={subIndex} className="mb-2 text-[1em] text-gray-700 hover:bg-gray-300 p-1 rounded">
                   {subItem}
                 </li>
               ))}

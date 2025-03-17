@@ -24,7 +24,7 @@ export default function Sidebar() {
             </div>
             <ul className="list-none pl-5 text-[14.5px]">
               {item.subItems.map((subItem, subIndex) => (
-                <li key={subIndex} className="mb-2 text-[1em] text-gray-700 hover:bg-gray-300 p-1 rounded">
+                <li key={subIndex} className="mb-2 text-[1em] text-gray-700 hover:bg-gray-300 p-1 rounded cursor-pointer">
                   {subItem}
                 </li>
               ))}

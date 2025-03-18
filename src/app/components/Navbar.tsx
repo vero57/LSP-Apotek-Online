@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <nav className="bg-gray-800 p-4 flex justify-between items-center">
+    <nav className="bg-red-800 p-4 flex justify-between items-center">
       <input
         type="text"
         placeholder="Search..."

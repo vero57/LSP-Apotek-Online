@@ -1,8 +1,10 @@
 "use client";
 
-import { FaArrowRight } from "react-icons/fa";
+interface SidebarProps {
+  activeItem: string;
+}
 
-export default function Sidebar() {
+export default function Sidebar({ activeItem }: SidebarProps) {
   const menuItems = [
     { title: "Dashboard", subItems: ["Overview", "Stats", "Reports"] },
     { title: "Obat", subItems: ["List Obat", "Tambah Obat"] },
@@ -24,7 +26,12 @@ export default function Sidebar() {
             </div>
             <ul className="list-none pl-5 text-[14.5px]">
               {item.subItems.map((subItem, subIndex) => (
-                <li key={subIndex} className="mb-2 text-[1em] text-gray-700 hover:bg-gray-300 p-1 rounded cursor-pointer">
+                <li
+                  key={subIndex}
+                  className={`mb-2 text-[1em] p-1 rounded cursor-pointer ${
+                    subItem === activeItem ? "bg-blue-500 text-white" : "text-gray-700 hover:bg-gray-300"
+                  }`}
+                >
                   {subItem}
                 </li>
               ))}
